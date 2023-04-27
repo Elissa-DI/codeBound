@@ -1,6 +1,8 @@
 .container {
   width: 75%;
   height: 70vh;
-  background-color: black;
+  /* background-color: black; */
   margin: 100px 0px 0px 100px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px;
 }
