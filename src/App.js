@@ -3,7 +3,6 @@ import { useState } from 'react'
 
 function App() {
   const [rating, setRating] = useState(0);
-
   const handleClick = (value) => {
     setRating(value);
   };
@@ -13,8 +12,11 @@ function App() {
         <div className='heading'>
           <h2>Customer survey</h2>
         </div>
+        <div className='pagination'>
+
+        </div>
          <div className='question'>
-           <p>How are you stisfied by our serveice</p>
+           <p>How are you stisfied by our service</p>
          </div>
          <div className='rate'>
            {[1, 2, 3, 4, 5].map((value) => (
@@ -26,9 +28,10 @@ function App() {
               </button>
       ))}
          </div>
-         <div>
-          <button>Prev</button>
-          <button>Next</button>
+         <div className='lastBtns'>
+          <button 
+          className='prevBtn'>Prev</button>
+          <button className='nextBtn'>Next</button>
          </div>
       </div>
     </div>
